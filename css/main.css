@@ -1,0 +1,44 @@
+/*.top-intro {
+  background-image: url('painting-491849.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}*/
+
+.top-image-container {
+  width:100%;
+  height:100%;
+  margin:0;
+}
+
+.top-image-container img {
+  position: relative;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.top-image-container .intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+}
+
+
+.top-image-container .intro-text {
+  font-family: 'Raleway', sans-serif;
+}
+
+.top-image-container .intro-text > h1{
+  font-size: 6em;
+  font-weight: bold;
+}
+
+.top-image-container .intro-text > h2{
+  font-size: 5em;
+}
+
+.top-image-container .intro-text .mailing-list-input {
+  position: relative;
+  margin-top: 50px;
+}
+
