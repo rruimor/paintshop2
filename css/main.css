@@ -1,44 +1,161 @@
-html { 
-  background: url(../img/painting-491849.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+/* General CSS */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
 }
 
 
-.intro-text-wrapper {
-  position: fixed;
-  bottom: 52px;
+a {
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%; /* limit to its parents' width container, to make then fluid */
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+/* Header CSS */
+
+header {
+  float: left;
+  margin: 0 0 20px 0;
+  padding: 5px 0 0 0;
   width: 100%;
-  background: rgba(128,128,128,0.5);
-  padding: 5px 0;
 }
 
-.mail-form {
+#logo {
   display: inline-block;
 }
 
-.mail-form input {
-  padding-left: 5px;
+#logo h1 {
+  font-family: "Raleway", sans-serif;
+  margin: 10px;
+  font-size: 1.4em;
+  font-weight: normal;
+  line-height: 0.8em;
 }
 
-.mail-form .btn-primary {
-  left: -30px;
+nav {
+  float: right;
+  margin-right: 8px;
 }
 
-h1 {
+nav ul {
+  list-style: none;
+  margin: 10px 0 15px 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-weight: 800;
+  font-size: 0.85em;
+  padding: 12px 8px;
+}
+
+
+/* PAGE: MAIN */
+
+#products {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product {
+  position: relative;
+  float:left;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.image:hover img{
+  opacity: 0.25;
+  -webkit-transition: opacity 0.2s;
+}
+
+.hover-text {
+  position: absolute;
+  display: table;
+  width: 100%;
+  top: 40%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  color: #000;
   text-align: center;
-  font-weight: bold;
-  font-size: 1.5em;
-  font-family: "Raleway";
+  -webkit-transition: visibility opacity 0.2s;
 }
 
-h2 {
-  margin-top:     10px;
-  margin-bottom:  15px;
-  text-align: center;
-  padding-left: 50px; 
-  font-size: 1.3em;
-  font-family: "Raleway";
+.image:hover .hover-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.details {
+  margin-top: 5px;
+}
+
+.details span.title {
+  line-height: 26px;
+  font-size: 1em;
+}
+
+.details span.price {
+  font-size: 0.95em;
+  opacity: 0.7;
+}
+
+
+/* COLORS */
+
+/* Site body */
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+header {
+  background: #000;
+  border-color: #000;
+}
+
+#logo h1 {
+  color: #FFF;
+}
+
+nav a, nav a:visited {
+  color: #FFF;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color: #32673f;
+}
+
+.details a, .details a:visited {
+  color: #000;
+}
+
+.details a:hover {
+  color: #555;
 }
